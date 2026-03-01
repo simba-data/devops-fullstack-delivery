@@ -1,0 +1,20 @@
+# Secrets Kubernetes
+k8s/postgres-secret.yaml
+.env
+secret.yaml
+!secret.yaml.example
+
+# --- PYTHON (Backend) ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+.pytest_cache/
+
+# --- OS & IDE ---
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.log

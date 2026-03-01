@@ -1,0 +1,13 @@
+namespace: dev
+
+backend:
+  replicaCount: 3
+  image: simba/backend:latest
+
+frontend:
+  replicaCount: 1
+  image: simba/frontend:latest
+
+postgres:
+  storageSize: 1Gi
+  image: postgres:15

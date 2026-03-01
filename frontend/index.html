@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DevOps Demo</title>
+</head>
+<body>
+    <h1>Hello DevOps!</h1>
+    <p>Backend API: <span id="api-message"></span></p>
+    <script>
+        fetch('http://backend-service.dev.svc.cluster.local:5000/hello')
+        .then(res => res.json())
+        .then(data => document.getElementById('api-message').innerText = data.message)
+        .catch(err => document.getElementById('api-message').innerText = 'Backend not reachable');
+    </script>
+</body>
+</html>
