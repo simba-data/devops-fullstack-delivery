@@ -30,7 +30,7 @@ spec:
             limits:
               memory: "128Mi"
               cpu: "500m"
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           ports:
             - containerPort: 5000
           livenessProbe:
